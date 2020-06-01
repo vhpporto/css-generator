@@ -8,20 +8,15 @@ export const Container = styled.View`
   background-color: #d6d6d6;
 `;
 
-export const Circle = styled.View`
+export const Component = styled.View`
   height: ${(props) => props.height}px;
   width: ${(props) => props.width}px;
   border-radius: ${(props) => props.radius}px;
   border-width: ${(props) => props.borderWidth}px;
   border-color: #199fff;
-  margin-top: 10px;
 `;
 
-export const BorderRadius = styled(Slider)`
-  width: 80%;
-`;
-
-export const BorderWidth = styled(Slider)`
+export const SliderBar = styled(Slider)`
   width: 80%;
 `;
 
@@ -42,5 +37,6 @@ export const ContainerTest = styled.View`
   flex: 1;
   background-color: #000;
   align-items: center;
+  justify-content: center;
   width: 100%;
 `;

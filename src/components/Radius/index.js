@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import {
   Container,
-  Circle,
-  BorderRadius,
-  BorderWidth,
+  Component,
   TextValue,
   ContainerControl,
   ContainerTest,
+  SliderBar,
 } from "./styles";
 
 const RadiusComp = () => {
@@ -22,7 +21,7 @@ const RadiusComp = () => {
     <Container>
       <ContainerControl>
         <TextValue>border-width: {borderWidthValue.toFixed(0)}px</TextValue>
-        <BorderRadius
+        <SliderBar
           animateTransitions={true}
           minimumValue={1}
           maximumValue={100}
@@ -30,7 +29,7 @@ const RadiusComp = () => {
           onValueChange={(value) => setBorderWidth(value)}
         />
         <TextValue>border-radius: {radiusValue.toFixed(0)}px</TextValue>
-        <BorderRadius
+        <SliderBar
           animateTransitions={true}
           minimumValue={1}
           maximumValue={100}
@@ -38,7 +37,7 @@ const RadiusComp = () => {
           onValueChange={(value) => setRadiusValue(value)}
         />
         <TextValue>height: {heightValue.toFixed(0)}px</TextValue>
-        <BorderRadius
+        <SliderBar
           animateTransitions={true}
           minimumValue={1}
           maximumValue={200}
@@ -46,7 +45,7 @@ const RadiusComp = () => {
           onValueChange={(value) => setHeightValue(value)}
         />
         <TextValue>width: {widthValue.toFixed(0)}px</TextValue>
-        <BorderRadius
+        <SliderBar
           animateTransitions={true}
           minimumValue={1}
           maximumValue={200}
@@ -55,7 +54,7 @@ const RadiusComp = () => {
         />
       </ContainerControl>
       <ContainerTest>
-        <Circle
+        <Component
           radius={radiusValue}
           borderWidth={borderWidthValue}
           height={heightValue}
