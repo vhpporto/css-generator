@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./src/screens/Home";
+import Radius from "./src/components/Radius";
 
 export default function App() {
-  return <Home />;
+  return <Radius />;
 }
